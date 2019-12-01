@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,22 +16,28 @@
 <body>
 
     <div id="jumbotron-fluid">
-        <div id="question-container" class="hide">
-            <h1 id="screenLoad" class="headline">Totally Trivial Trivia!! YaY</h1>
-            <div class="container">
+        <h1 id="screenLoad" class="headline">Totally Trivial Trivia!! YaY</h1>
+        <div class="container">
+            <div id="question-container" class="hide">
                 <h2 id="timer" class="startGame">Time Remaining:</h2>
-                <div id="question">Question</div>
+                <br>
+                <div id="question" class="Questions">Question</div>
                 <div id="answer-buttons" class="btn-grid">
-                    <a class="answer-buttons">Answer 1</a>
-                    <a class="answer-buttons">Answer 2</a>
-                    <a class="answer-buttons">Answer 3</a>
+                    <button  id="answer-buttons">Answer 1</button>
+                    <button  id="answer-buttons">Answer 2</button>
+                    <button  id="answer-buttons">Answer 3</button>
+                    <button  id="answer-buttons">Answer 4</button>
                 </div>
+                <div id="display_here"></div>
             </div>
         </div>
     </div>
 
+    <!-- <div id="winningImg" class="hide">
+    <img id="change-image" src="assets/images/YouWon.jpg" alt="Winning Image"/>
+    </div> -->
     <div class="controls">
-        <button id="starting" class="start-btn">Start</button>
+        <button id="starting" class="start-btn">Happy Thinking!<p>Click me to START GAME</p></button>
         <button id="next-btn" class="hide">Next</button>
     </div>
 

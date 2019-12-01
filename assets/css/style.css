@@ -6,58 +6,114 @@
 html {
     background-image: url("Bell.jpg");
     background-attachment: fixed;
-    display: grid;
-    text-align: start;
+    display: flex;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 50px;
+    margin-top: 40px;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    --hue: var(--hue-neutral);
+    
 }
+
+/* body.correct {
+    --hue: var(--hue-wrong);
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+} */
+
+
   
 body {
     position: relative;
+    box-sizing: inherit;
     display: grid;
-    padding: 100px;
-    margin: 0;
-    margin-top: 20px;
-    text-shadow: 1px 1px rgb(17, 35, 56) 2px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, -50px -40px 0px -26px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, -50px -40px 0px -26px rgba(0,0,0,0);
-    box-shadow: 10px 5px 5px rgb(58, 21, 21);
-    box-shadow: 20px 10px 10px rgb(58, 21, 21);
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    /* margin: 20px;
+     
+    margin-bottom: 20px;  */
+    /* text-shadow:21px 2px rgb(0, 0, 0) 20px; */
+    -webkit-box-shadow: 0px 10px 13px 10px #000000, -50px -40px 0px -26px rgba(0,0,0,0); 
+    box-shadow: 3px 3px 5px 9px  rgb(5, 5, 75);
+    box-shadow: 3px 3px 5px 9px  rgb(5, 5, 75);
     font-size: 50px;
-    border-block-end-color: lightcoral; */
+    border-block-end-color: lightcoral; 
+    border-radius: 2px;
+    border-style: outset;
  } 
+ p {
+    font-size: 30px;
+    text-shadow:  1px 1px 1px rgb(5, 5, 75);
+    font-family: italic;
+    padding: 20px;
+}
+
+ .start-btn {
+    font-size: 100px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 130px;
+    margin-bottom: 110px;
+    border-style: outset;
+    border-radius: 2px;
+    -webkit-box-shadow: 5px 5px 13px 10px black, -50px -40px 0px -26px black; 
+    box-shadow: 3px 3px 3px 6x rgb(5, 5, 75);;
+    box-shadow: 3px 3px 3px 6px rgb(5, 5, 75); ;
+    text-shadow:  3px 3px 3px black
+}
 
 #starting:hover {
     padding: 0;
     background-color: rgb(255, 177, 242);
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 3px;
     padding: 5px 10px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    border-style: outset;
 }
 
 .headline {
+    font-family: italic;
     display: grid;
     position: relative;
+    /* margin: 10px;
     margin-top: 30px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
+    padding: 10px;
     justify-content: center;
-    font-size: 90px;
-}
-.start-btn {
     font-size: 100px;
-    font-weight: bold;
-    padding: 10px 20px;
+    color: rgb(4, 4, 44);
+    border-style: outset;
+    background: rgb(238, 37, 154);
+    border-radius: 3px;
+    text-shadow:  15px 15x 15x rgb(5, 5, 75);
+    box-shadow: 3px 3px 3px 6x rgb(5, 5, 75);
+    box-shadow: 3px 3px 3px 6px rgb(5, 5, 75);
 }
+
 
 .controls{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: outset;
 }
 .hide {
     display: none;
@@ -66,26 +122,66 @@ body {
 #jumbotron-fluid{
     border-top-style: outset;
     border-bottom-style: outset;
+    background: rgb(206, 164, 195);
+    border-style: outset;
+    justify-content: center;
 }
-#question,.startGame, .btn-grid, #answer-buttons{
+.Questions {
+    /* position: relative;
+    display: flex; */
+    margin-bottom: 30px;
+    justify-content: center;
     font-size: 50px;
-    padding: 0px;
-    gap: 10px;
+    border-style: outset;
+    box-shadow: 1px 2px 3px 3px rgb(53, 47, 47);
+    box-shadow: 1px 2px 3px 3px rgb(56, 49, 49);
+    color: rgb(5, 5, 75);
+    /* text-shadow:  1px 1px 1px rgb(5, 5, 75); */
 }
 
-.startGame, .btn-grid:hover {
+#question-container{
+    background: rgb(253, 244, 117);
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px 10px #000000, -50px -40px 0px -26px rgba(0,0,0,0); 
+    box-shadow: 1px 2px 3px 3px rgb(53, 47, 47);
+    box-shadow: 1px 2px 3px 3px rgb(56, 49, 49);
+    gap: 10px;
+    color: rgb(5, 5, 75);
+    margin-bottom: 20px;
+    display: grid;
+    text-shadow:21px 2px rgb(0, 0, 0) 20px;
+}
+
+/* #answer-buttons {
+    font: bolder;
+    font-size: 50px;
+} */
+.startGame {
     position: relative;
-    margin: auto;
+    margin: 10px;
+    margin-top: 30px;
     font-size: 60px;
+    text-align: center;
+    border-style: outset; 
+    border-radius: 3px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(9, 11, 34);
+    box-shadow: 1px 1px 1px 1px rgb(9, 11, 34);
+    color: rgb(5, 5, 75);
 }
 
 .btn:hover {
-    padding: 30px;
-    background-color: rgb(240, 255, 31);
+    position: relative;
+    background-color: rgb(1, 128, 202);
     border: 1px solid;
     border-radius: 3px;
-    padding: 5px 10px;
-    font-size: 60px;
+    /* padding: 5px 10px; */
+    font-size: 40px;
+    margin-bottom: 10px;
+    border-style: outset;
+    justify-content: center;
+    text-shadow:  1px 1px 1px rgb(5, 5, 75);
+    /* display: none; */
 }
 
 
@@ -95,19 +191,5 @@ body {
 
 
 
-  @mixin .reseting {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .reseting {
-    @include .reseting;
-    padding: 10px;
-    background-color: skyblue;
-  } 
-
+ 
 
